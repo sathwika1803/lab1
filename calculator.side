@@ -1,0 +1,84 @@
+{
+  "id": "16124cf5-5281-478b-97ad-b0e88ca6b8d8",
+  "version": "2.0",
+  "name": "calculator",
+  "url": "https://calculator.com",
+  "tests": [{
+    "id": "b49a1f50-0bef-48c5-a03d-e295de1b1b10",
+    "name": "calculator",
+    "commands": [{
+      "id": "8398824c-3778-4e61-9cc3-ae44ec508b29",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8df4082-d0a6-449f-a6a8-1de4e0eb3a21",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e610d0c-e21f-464e-8c5a-f2601e9381e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blue:nth-child(2)",
+      "targets": [
+        ["css=.blue:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='7']", "xpath:attributes"],
+        ["xpath=//div[@id='calcbuttons']/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82a2f9b7-c2ba-44ed-9113-bb03255805ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(19)",
+      "targets": [
+        ["css=.button:nth-child(19)", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//div[@id='calcbuttons']/div[8]/input[14]", "xpath:idRelative"],
+        ["xpath=//input[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa59829-a665-4550-a63b-456f442d551c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(9)",
+      "targets": [
+        ["css=.button:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='4']", "xpath:attributes"],
+        ["xpath=//div[@id='calcbuttons']/div[8]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bc60587-d999-4c0c-868d-36b13d3dd3e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=equals_btn",
+      "targets": [
+        ["id=equals_btn", "id"],
+        ["css=#equals_btn", "css:finder"],
+        ["xpath=//input[@id='equals_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='calcbuttons']/div[8]/input[20]", "xpath:idRelative"],
+        ["xpath=//input[20]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "28b81aa5-e2fc-42f9-aa8b-8d6062ac64ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b49a1f50-0bef-48c5-a03d-e295de1b1b10"]
+  }],
+  "urls": ["https://calculator.com/"],
+  "plugins": []
+}
